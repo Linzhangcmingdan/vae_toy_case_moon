@@ -4,7 +4,7 @@
 ![示例图片](https://github.com/Linzhangcmingdan/vae_toy_case_moon/blob/main/vae_energies-12-00849-g001-550.webp)
 
 
-Hi!
+Structure
 
 
 
