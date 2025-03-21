@@ -1,0 +1,23 @@
+# 数据配置
+data:
+  n_samples: 1000
+  noise: 0.1
+  input_dim: 2
+  latent_dim: 5
+  random_seed: 42
+
+# 模型结构
+model:
+  encoder_dims: [32, 64, 128]  # 编码器隐藏层维度
+  decoder_dims: [128, 64, 32]  # 解码器隐藏层维度
+  activation: "leaky_relu"      # 激活函数类型
+  use_batchnorm: true           # 是否使用BatchNorm
+
+# 训练配置
+training:
+  lr: 0.005
+  weight_decay: 1e-4
+  epochs: 1000
+  lr_step_size: 200             # 学习率衰减步长
+  lr_gamma: 0.8                 # 学习率衰减系数
+  kl_weight: 0.1                # KL散度权重
